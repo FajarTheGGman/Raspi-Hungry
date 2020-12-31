@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>HungryPi - Server</title>
+  </head>
+
+<style>
+body{
+  background: #9e0018;
+}
+
+img{
+  width: 20%;
+  color: green;
+}
+
+h1{
+  margin-top: 10%;
+  font: 30px "sans-serif";
+  background: black;
+  color: #9e0018
+}
+
+p{
+  font: 35px "sans-serif";
+  
+}
+
+#menu{
+  background:black;
+}
+
+#menu p{
+  color: #9e0018;
+}
+
+h2{
+  font: 35px "sans-serif";
+}
+
+#circle{
+  padding-top: 5px;
+  padding-left: 40px;
+  background: green;
+  width: 10%;
+  margin-left: 2%;
+  display: inline;
+}
+</style>
+
+  <body>
+    <center>
+    <h1>HungryPi - Server</h1>
+    <img src="http://192.168.1.8:5000/banner"/>
+    <h2>Status : Active <div id='circle'></div></h2>
+
+    <div id="menu">
+      <h1>{ List API }</h1>
+      <p>GET /termial?command={yourcommands}</p>
+      <p>GET /vnc</p>
+      <p>GET /honeypot</p>
+      <p>GET /temp</p>
+    </div>
+    </center>
+  </body>
+
+</html>

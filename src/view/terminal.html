@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Terminal</title>
+  </head>
+
+  <style>
+    body{
+      background: #b00004;
+    }
+  
+    #term{
+      margin-top: 25%;
+      padding: 45px;
+      border: 10px black solid;
+    }
+
+    #title{
+      text-align: center;
+      font: 65px sans-serif;
+      background: black;
+      color: #b00004;
+      margin-top: -1%;
+
+    }
+  </style>
+
+  <body>
+    <div id="term">
+      <h1 id='title'>Terminal</h1>
+    </div>
+  </body>
+
+  <script>
+    function send(){
+      var ip = prompt("ip")
+      var input = prompt("command")
+
+      var q = new XMLHttpRequest();
+      //var input = document.getElementById("term").value;
+
+      q.open("GET", "http://" + ip + ":5000/terminal?command=" + input, true);
+      q.send()
+
+      q.onreadystatechange = r
+      function r(){
+        alert(q.response)
+      }
+    }
+  </script>
+
+</html>
