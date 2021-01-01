@@ -45,7 +45,7 @@
 
 - temperature (for checking raspiberry pi temperature)
 
-![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/temperature.png)
+<img align="left" alt="temp" width="126px" src="https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/temperature.png"/>
 
 
 - vnc (for turn on vnc server "IP:5901")
