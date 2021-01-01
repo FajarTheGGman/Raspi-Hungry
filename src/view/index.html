@@ -50,7 +50,7 @@ h2{
   <body>
     <center>
     <h1>HungryPi - Server</h1>
-    <img src="http://192.168.1.8:5000/banner"/>
+    <img id='banner' src="http://192.168.1.8:5000/banner"/>
     <h2>Status : Active <div id='circle'></div></h2>
 
     <div id="menu">
@@ -61,6 +61,13 @@ h2{
       <p>GET /temp</p>
     </div>
     </center>
+    
+    <script>
+    var img = document.getElementById("banner")
+
+    img.setAttribute("src", window.location.hostname + "/banner")
+    
+    </script>
   </body>
 
 </html>

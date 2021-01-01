@@ -1,3 +1,6 @@
+// Copyright© 2020 By Fajar Firdaus
+
+// Library i used
 const express = require('express');
 const morgan = require('morgan');
 const helmet = require('helmet');
@@ -15,6 +18,8 @@ const app = express();
 
 app.use(cors());
 
+
+// Honeypot functions to check access log
 function honeypot(){
 fs.watchFile('/var/log/auth.log', (current, previous) => {
     fs.readFile("/var/log/auth.log", "utf8", (err, data) => {
@@ -26,10 +31,13 @@ fs.watchFile('/var/log/auth.log', (current, previous) => {
 
 }
 
+// Function to check the raspi temperature
 function temperature(){
     sh.exec("bash ./tools/temperature/read.sh")
 }
 
+
+// Function to generate command to terminal from app
 app.get("/terminal", (req,res) => {
     var x = req.query.command;
     var process = sh.exec(x, {silent: true})
@@ -40,54 +48,60 @@ app.get("/terminal", (req,res) => {
     }
 })
 
+
+// Route to turn on the vncserver
 app.get("/vnc", (req,res) => {
     var process = sh.exec("bash ./tools/vnc.sh", {silent: true})
     res.json({ "result": "vncserver successfully enabled" })
 })
 
+// Just a banner
 app.get('/banner', (req,res) => {
     fs.createReadStream(__dirname + "/view/banner.png").pipe(res)
 })
 
+// index view
 app.get('/', (req, res) => {
     fs.createReadStream(__dirname + "/view/index.html").pipe(res)
 })
 
+// route to turn on the honeypot
 app.get('/honeypot', (req,res) => {
     honeypot()
     res.json({ "status": "[+] Honeypot is on" })
 })
 
+// route to check honeypot access log
 app.get('/honeylog', (req,res) => {
     fs.readFile('./tools/honeypot/warning', "utf8", (err, data) => {
         res.json({ "result": data })
     })
 })
 
+// route to shutdown the raspberry pi
 app.get("/shutdown", (req,res) => {
     res.json({ "status": "raspberry pi will shutdown in second" })
     sh.exec('sudo shutdown now')
 })
 
+// route to check the server connection
 app.get('/connection', (req,res) => {
     res.json({ "status": "200 OK" })
 })
 
+// route for network mapper
 app.get('/nmap', (req,res) => {
     var nmap = sh.exec("nmap " + req.query.ip ,{ silent: true })
     res.json({ result: nmap })
 })
 
+// route for check the raspberry pi temperature
 app.get("/temp", (req,res) => {
     temperature();
 
     fs.readFile("./tools/temperature/temp.log", "utf8", (err, data) => {
         res.json({ "hasil": data })
     })
-})
-
-app.get("/terminal/jquery", (req,res) => {
-    fs.createReadStream(__dirname + "/assets/jquery.js").pipe(res)
 })
 
 app.use('/api/v1', api);
