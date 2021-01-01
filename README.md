@@ -50,7 +50,7 @@
 
 - vnc (for turn on vnc server "IP:5901")
 
-![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/vnc/png)
+![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/vnc.png)
 
 
 # How to install ? 
