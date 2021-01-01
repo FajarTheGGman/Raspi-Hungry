@@ -1,1 +1,1 @@
-/opt/vc/bin/vcgencmd > ./tools/temperature/temp.log
+/opt/vc/bin/vcgencmd measure_temp > ./tools/temperature/temp.log

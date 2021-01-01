@@ -81,7 +81,7 @@ app.get('/nmap', (req,res) => {
 app.get("/temp", (req,res) => {
     temperature();
 
-    fs.readFile("./tools/temperature/temp.log", (err, data) => {
+    fs.readFile("./tools/temperature/temp.log", "utf8", (err, data) => {
         res.json({ "hasil": data })
     })
 })
