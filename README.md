@@ -9,22 +9,22 @@
 
 - Server
 
-![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/banner.png)
+<img align="left" alt="banner" width="326px" src="https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/banner.png"/>
 
 
 - Android Application
 
-![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/banner2.png)
+<img align="left" alt="android" width="326px" src="https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/banner2.png"/>
 
 
 - Input Ip
 
-![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/ip.jpeg)
+<img align="left" alt="ip" width="226px" src="https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/ip.jpeg"/>
 
 
 - Menu
 
-![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu.jpeg)
+<img align="left" alt="menu" width="226px" src="https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu.jpeg"/>
 
 
 - Terminal
@@ -35,12 +35,11 @@
 
 - honeypot (turn on honeypot & check honeypot log)
 
-![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/honeypot.png)
-
+<img align="left" alt="honeypot" width="126px" src="https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/honeypot.png"/>
 
 - nmap (for scanning network)
 
-![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/nmap.png)
+<img align="left" alt="nmap" width="126px" src="https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/nmap.png"/>
 
 
 - temperature (for checking raspiberry pi temperature)
@@ -50,7 +49,7 @@
 
 - vnc (for turn on vnc server "IP:5901")
 
-![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/vnc.png)
+<img align="left" alt="vnc" width="126px" src="https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/menu/vnc.png"/>
 
 
 # How to install ? 
