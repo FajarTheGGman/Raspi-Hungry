@@ -14,7 +14,7 @@
 
 - Android Application
 
-![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/banner2.png)
+![](https://raw.githubusercontent.com/FajarTheGGman/Raspi-Hungry/master/.screenshot/banner2.jpeg)
 
 
 - Input Ip
