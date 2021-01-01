@@ -56,11 +56,13 @@
 # How to install ? 
 
 <pre>
-sudo bash install.sh
+1. clone this repo
+2. sudo bash install.sh
 </pre>
 
 # How to run ?
 
 <pre>
-Just Type "npm start"
+1. install this app into your phone (https://github.com/FajarTheGGman/Raspi-Hungry/raw/master/Raspi-Hungry.apk)
+2. Just Type "npm start" in raspberry pi 
 </pre>
