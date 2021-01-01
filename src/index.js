@@ -37,7 +37,7 @@ jsome({
 
 // Catch the IP/Hostname from file and add it to server
 
-fs.readFile("./hostname", (err, ip) => {
+fs.readFile("host", (err, ip) => {
 const port = process.env.PORT || 5000;
 app.listen(port, ip, () => {
   /* eslint-disable no-console */
